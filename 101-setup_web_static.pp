@@ -44,5 +44,5 @@ file_line { hhhhh:
   path => '/etc/nginx/sites-available/default'
   ensure => 'present',
   after => 'server_name _;',
-  line => 'location /hbnn_static { /data/web_static/current; }'
+  line => 'location /hbnn_static/ { alias /data/web_static/current/; }'
 }
